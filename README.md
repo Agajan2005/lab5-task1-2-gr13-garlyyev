@@ -1,4 +1,4 @@
-# Overview Report on LabRabota5
+# Отчет по лабораторной работе №5
 
 Лабораторная работа №5 по дисциплине «Непрерывное интегрирование и сборка программного обеспечения».
 Тема: «Проектирование модели управления версиями ПО, конфигурациями и непрерывной поставкой».
@@ -7,9 +7,10 @@
 
 Гарлыев Агаджан, группа 13
 
-## Usage
+## Использование
 
-To check, please, preview report by [docs/report.md](docs/report.md) (или `docs/report.docx`) and source files in [terraform-tutorial/](terraform-tutorial/) and [ansible/](ansible/).
+Для проверки работы, пожалуйста, ознакомьтесь с отчетом: [docs/report.docx](docs/report.docx) и ответами на контрольные вопросы: [docs/answers.docx](docs/answers.docx). 
+Исходные файлы конфигураций находятся в папках [terraform-tutorial/](terraform-tutorial/) и [ansible/](ansible/).
 
 Все конфигурационные файлы Terraform находятся в каталоге `terraform-tutorial/`, файлы Ansible — в каталоге `ansible/`.
 Скриншоты выполнения команд — в каталоге `screenshots/`.
