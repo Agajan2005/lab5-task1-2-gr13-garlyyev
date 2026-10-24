@@ -1,0 +1,31 @@
+---
+- name: Setup servers
+  hosts: servers
+  become: false
+  tasks:
+    - name: Update APK cache
+      apk:
+        update_cache: yes
+
+    - name: Install useful packages (zsh, curl, vim)
+      apk:
+        name:
+          - zsh
+          - curl
+          - vim
+        state: present
+
+    - name: Create test directory
+      file:
+        path: /tmp/test-dir
+        state: directory
+        mode: '0755'
+
+    - name: Create a file with server hostname
+      copy:
+        content: "This server is: {{ inventory_hostname }}\n"
+        dest: /tmp/test-dir/info.txt
+
+    - name: Print server hostname
+      debug:
+        msg: "Server {{ inventory_hostname }} is configured!"
